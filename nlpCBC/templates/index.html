@@ -1,0 +1,81 @@
+{% load static tailwind_tags %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nlpCBC</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.3.x/dist/index.js"></script>
+     {% tailwind_css %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    
+    {% comment %} <link rel="stylesheet" href="{% static 'style.css'%}> {% endcomment %}
+    
+    
+    
+
+    
+  
+</head>
+<body>
+
+  
+
+        <div class="nav">
+            <div class='nav-bar-uper'>
+              <div class="logo">
+                <img src="static/logofinal.png" alt="logo" srcset="" class='logo-img' />
+              </div>
+              <div class="nav-bar-uper-contant">
+                  <h1>Southern University Bangladesh</h1>
+                  <h3>Department of Computer Science & Engineering</h3>
+              </div>
+            </div>
+         
+        </div>
+
+        <div class="heading-section">
+          <h1>NLP to understand a CBC report and diagnosis disease</h1>
+        </div>
+
+        <div class="main-link">
+          
+            <li><a href="https://drive.google.com/drive/home">Paper |</a></li>
+            <li><a href="https://github.com/Yeasin-Hossen-Arman/Parkinson-s-Disease">Code |</a></li>
+            <li><a href="#">Project |</a></li>
+            <li><a href="#">Slide |</a></li>
+            <li><a href="#">Dataset </a></li>
+        
+        </div>
+
+        
+
+        {% block body %}
+
+
+        
+
+              {% comment %} contain components {% endcomment %}
+
+        {% endblock %}
+
+
+       <footer class="footer-sec w-full p-4 mb-0 bg-gray-300 text-gray-800">
+        <div class="text-center">
+          <p>
+            Copyright © 2024 -
+            <a class="font-semibold" href=""
+              >Yeasin Arman</a>
+          </p>
+        </div>
+      </footer>
+
+</body>
+</html>
